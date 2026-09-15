@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "actr.one — Your career, directed",
+      "hasCanvas": false,
+      "bodyTextLen": 6885,
+      "bodyTextHash": "1b987f341e2c13e549ee5dda1ab735313dcc2a70f0ba984268a19ad41c479d0f",
+      "bodyTextPrefix": "The desk The run Stages Plans Sign in Get Call Sheet ACTOR OPERA",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "actr.one — Your career, directed",
+      "hasCanvas": false,
+      "bodyTextLen": 6855,
+      "bodyTextHash": "71f5a1b42d8cd72b7c427d6241863fdaaa1d23d27a006be210b6695b8a3b994c",
+      "bodyTextPrefix": "Sign in Get Call Sheet ACTOR OPERATING SYSTEM Run the work. Book",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

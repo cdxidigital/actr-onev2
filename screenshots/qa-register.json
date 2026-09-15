@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/register",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "actr.one — Your career, directed",
+      "hasCanvas": false,
+      "bodyTextLen": 416,
+      "bodyTextHash": "df33ea870a35a2c83cb0235b1ae192b281b5666205c7f0533cb2d3c422cd6891",
+      "bodyTextPrefix": "Plans Sign in CREATE ACCOUNT Take the desk. Call Sheet is free. ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/qa-register.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "actr.one — Your career, directed",
+      "hasCanvas": false,
+      "bodyTextLen": 410,
+      "bodyTextHash": "4f4b7ecd520907466e7c7efa10ce21048de5df00bdce327f3d8f9e28baa939b6",
+      "bodyTextPrefix": "Sign in CREATE ACCOUNT Take the desk. Call Sheet is free. Eight ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/qa-register-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/qa-register.json"
+}

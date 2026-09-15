@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/pricing",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "actr.one — Your career, directed",
+      "hasCanvas": false,
+      "bodyTextLen": 2515,
+      "bodyTextHash": "539d1fc31654846e49e0b89a04c64d8b0e52ce4697f44568321c79204e893a00",
+      "bodyTextPrefix": "Plans Sign in Get Call Sheet PLANS Pay when the pipeline is live",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/qa-pricing.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "actr.one — Your career, directed",
+      "hasCanvas": false,
+      "bodyTextLen": 2509,
+      "bodyTextHash": "6bef80eaeaeea304e4a9cff779d0f28a07005964e9be6849ae5344d5a3214240",
+      "bodyTextPrefix": "Sign in Get Call Sheet PLANS Pay when the pipeline is live. Call",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/qa-pricing-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/qa-pricing.json"
+}

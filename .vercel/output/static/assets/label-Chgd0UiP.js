@@ -1,0 +1,1 @@
+import{f as e,t}from"./utils-DY8XG0qg.js";var n=e();function r({className:e,...r}){return(0,n.jsx)(`label`,{className:t(`grid gap-2 text-xs font-medium uppercase tracking-[0.12em] text-muted-fg`,e),...r})}export{r as t};

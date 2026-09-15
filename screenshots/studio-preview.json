@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/studio",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "actr.one — Your career, directed",
+      "hasCanvas": false,
+      "bodyTextLen": 1229,
+      "bodyTextHash": "0bc917d84cecdb8c50d049a5f3e20e97be8aa62958f33eb1fb74c01cb028dd12",
+      "bodyTextPrefix": "actr.one COMMAND CENTER Overview Auditions 5 Self-tapes Scripts ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/studio-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "actr.one — Your career, directed",
+      "hasCanvas": false,
+      "bodyTextLen": 1063,
+      "bodyTextHash": "fe399c71071e7d989d1328b4d4e52390677c86ced51690b69de5e7b0bae5bf0e",
+      "bodyTextPrefix": "actr.one Add audition COMMAND CENTER Good evening, Jordan. Three",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/studio-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/studio-preview.json"
+}
