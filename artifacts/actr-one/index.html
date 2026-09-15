@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>actr.one — Your career, directed</title>
+  <meta name="description" content="The career operating system for working actors. Track auditions, build the instrument, and keep the next move clear." />
+  <link rel="icon" href="./brand/icon.svg" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="landing" class="landing">
+    <nav class="landing-nav">
+      <div class="brand-row">
+        <img class="brand-mark" src="./brand/mark.png" alt="actr.one mark" />
+        <div class="word">actr<span>.</span>one</div>
+      </div>
+      <button class="nav-cta" id="openApp">Enter the studio</button>
+    </nav>
+    <header class="hero">
+      <div class="eyebrow">Actor operating system</div>
+      <h1>Your career, directed.</h1>
+      <p class="lede">A command center for working actors. Auditions, self-tapes, character notes, and training — held in one quiet, serious place so the next move stays obvious.</p>
+      <div class="hero-actions">
+        <button class="btn btn-primary" id="openAppHero">Open command center</button>
+        <a class="btn btn-ghost" href="#chapters">See the rooms</a>
+      </div>
+      <div class="hero-meta">
+        <div><span class="eyebrow">Pipeline</span><strong>Live board</strong><small>Status that actually changes the score</small></div>
+        <div><span class="eyebrow">Craft</span><strong>Tapes & notes</strong><small>Checklists and inner life, side by side</small></div>
+        <div><span class="eyebrow">Coach</span><strong>On your data</strong><small>Advice drawn from the work you logged</small></div>
+      </div>
+    </header>
+    <section class="chapters" id="chapters">
+      <article class="chapter">
+        <div class="eyebrow">01 / Board</div>
+        <h2>Stop losing roles in threads and notes apps.</h2>
+        <p>Every audition has a home: role, type, time, status, and the private note you need the morning of. Filters, search, and a command palette keep the slate fast.</p>
+      </article>
+      <article class="chapter">
+        <div class="eyebrow">02 / Instrument</div>
+        <h2>Training is not a mood. It is a streak.</h2>
+        <p>Log the work. Watch the week. Career health is computed from consistency, readiness, and momentum — not a badge you buy.</p>
+        <div class="chapter-grid">
+          <div class="chip-card"><h3>Self-tapes</h3><p>Living checklists through record and send.</p></div>
+          <div class="chip-card"><h3>Notes</h3><p>Character files that stay short on purpose.</p></div>
+          <div class="chip-card"><h3>Analytics</h3><p>A readable mix of where the work sits.</p></div>
+        </div>
+      </article>
+      <article class="chapter">
+        <div class="eyebrow">03 / Presence</div>
+        <h2>A coach that has read your board.</h2>
+        <p>Ask for a focus plan, a tape note, or a health read. The replies look at your actual pipeline — not a generic actor blog.</p>
+      </article>
+    </section>
+    <footer class="landing-foot">actr.one · career command center · demo data lives in this browser</footer>
+  </div>
+
+  <div id="app" class="hidden">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-row">
+          <img class="brand-mark" src="./brand/mark.png" alt="" />
+          <div>
+            <div class="word">actr<span>.</span>one</div>
+            <div class="eyebrow">career command center</div>
+          </div>
+        </div>
+        <nav>
+          <button class="nav-item" data-nav="overview">Overview</button>
+          <button class="nav-item" data-nav="auditions">Auditions <span class="count" id="auditionCount">0</span></button>
+          <button class="nav-item" data-nav="tapes">Self-tapes</button>
+          <button class="nav-item" data-nav="notes">Scripts & notes</button>
+          <button class="nav-item" data-nav="training">Training</button>
+          <button class="nav-item" data-nav="analytics">Analytics</button>
+        </nav>
+        <div class="sidebar-foot">
+          <button class="nav-item" data-nav="coach">AI Career Coach</button>
+          <button class="nav-item" data-nav="settings">Settings</button>
+          <div class="hr"></div>
+          <button class="user-row" data-nav="settings">
+            <div class="avatar" id="avatar">JM</div>
+            <div>
+              <div id="profileName">Jordan Mitchell</div>
+              <small id="profilePlan">Studio plan</small>
+            </div>
+          </button>
+        </div>
+      </aside>
+
+      <div class="workspace">
+        <header class="topbar">
+          <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+          <div class="mobile-brand">
+            <img class="brand-mark" src="./brand/mark.png" alt="" style="width:28px;height:28px" />
+            <span class="word">actr<span>.</span>one</span>
+          </div>
+          <div class="date-chip"><span class="dot"></span><span id="liveDate"></span></div>
+          <div class="top-actions">
+            <button class="command-trigger" id="commandBtn"><span>Search anything</span> <kbd>⌘ K</kbd></button>
+            <button class="icon-btn" id="notifyBtn" aria-label="Notifications">🔔<span class="ping"></span></button>
+            <div class="theme-wrap">
+              <button class="icon-btn" id="themeBtn" aria-label="Theme">◐</button>
+              <div id="themeMenu" class="theme-menu hidden">
+                <button class="theme-opt" data-theme-set="studio"><span class="swatch sw-studio"></span><span><strong>Studio Light</strong><small>Focused editorial</small></span></button>
+                <button class="theme-opt" data-theme-set="noir"><span class="swatch sw-noir"></span><span><strong>Carbon Noir</strong><small>Deep work mode</small></span></button>
+                <button class="theme-opt" data-theme-set="cobalt"><span class="swatch sw-cobalt"></span><span><strong>Electric Cobalt</strong><small>High signal</small></span></button>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="content" id="viewRoot"></main>
+      </div>
+    </div>
+  </div>
+
+  <div id="drawerBack" class="drawer-back hidden"></div>
+  <aside id="drawer" class="drawer">
+    <div class="brand-row" style="margin-bottom:16px">
+      <img class="brand-mark" src="./brand/mark.png" alt="" />
+      <div class="word">actr<span>.</span>one</div>
+    </div>
+    <nav class="grid" style="gap:4px">
+      <button class="nav-item" data-nav="overview">Overview</button>
+      <button class="nav-item" data-nav="auditions">Auditions</button>
+      <button class="nav-item" data-nav="tapes">Self-tapes</button>
+      <button class="nav-item" data-nav="notes">Scripts & notes</button>
+      <button class="nav-item" data-nav="training">Training</button>
+      <button class="nav-item" data-nav="analytics">Analytics</button>
+      <button class="nav-item" data-nav="coach">AI Career Coach</button>
+      <button class="nav-item" data-nav="settings">Settings</button>
+    </nav>
+  </aside>
+
+  <div id="modal" class="backdrop hidden"></div>
+  <div id="command" class="backdrop hidden">
+    <div class="command">
+      <div class="command-in">
+        <span>⌘</span>
+        <input id="commandInput" placeholder="Search auditions, notes, actions…" aria-label="Command search" />
+        <kbd>ESC</kbd>
+      </div>
+      <div class="command-list" id="commandList"></div>
+    </div>
+  </div>
+  <div class="toast-wrap" id="toasts"></div>
+  <script src="./app.js"></script>
+</body>
+</html>

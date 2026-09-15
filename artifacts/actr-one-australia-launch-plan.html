@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>actr.one — Australia launch plan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f4f1ea;
+      --fg: #1c1914;
+      --card: #fffcf7;
+      --muted: #e7e1d6;
+      --muted-fg: #6b6458;
+      --accent: #6748ff;
+      --accent-fg: #ffffff;
+      --border: #ddd4c6;
+      --ok: #2f6b4f;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--bg); color: var(--fg); }
+    body {
+      font-family: "DM Sans", "Segoe UI", system-ui, sans-serif;
+      font-size: 15px;
+      line-height: 1.55;
+    }
+    .page { max-width: 920px; margin: 0 auto; padding: 48px 28px 80px; }
+    h1, h2, h3, .display { font-family: "Fraunces", "Times New Roman", serif; font-weight: 500; letter-spacing: -0.03em; }
+    h1 { font-size: 52px; line-height: 0.95; margin: 12px 0 16px; }
+    h2 { font-size: 28px; margin: 48px 0 12px; padding-top: 8px; border-top: 1px solid var(--border); }
+    h3 { font-size: 18px; margin: 28px 0 8px; }
+    p { margin: 0 0 12px; max-width: 68ch; }
+    .lede { font-size: 18px; color: var(--muted-fg); max-width: 62ch; }
+    .kicker {
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent);
+    }
+    .meta { color: var(--muted-fg); font-size: 13px; }
+    .grid { display: grid; gap: 12px; margin: 18px 0 8px; }
+    .g2 { grid-template-columns: 1fr 1fr; }
+    .g3 { grid-template-columns: 1fr 1fr 1fr; }
+    .g4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+    .card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 16px 18px;
+    }
+    .card h3 { margin-top: 0; }
+    .num { font-family: "Fraunces", serif; font-size: 28px; line-height: 1; }
+    .num small { display: block; font-family: "DM Sans", sans-serif; font-size: 12px; color: var(--muted-fg); margin-top: 6px; letter-spacing: 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 13.5px; margin: 12px 0 20px; }
+    th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    th { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted-fg); font-weight: 500; }
+    td.r, th.r { text-align: right; font-variant-numeric: tabular-nums; }
+    ul, ol { margin: 0 0 14px; padding-left: 1.2em; max-width: 70ch; }
+    li { margin: 0 0 6px; }
+    .note { font-size: 12.5px; color: var(--muted-fg); max-width: 72ch; }
+    .tag {
+      display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 11px;
+      letter-spacing: 0.08em; text-transform: uppercase; border: 1px solid var(--border);
+      border-radius: 999px; padding: 3px 9px; color: var(--muted-fg);
+    }
+    .cover {
+      min-height: 88vh; display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 24px 0 40px;
+    }
+    .rule { height: 1px; background: var(--border); margin: 24px 0; }
+    a { color: var(--accent); }
+    @media (max-width: 760px) {
+      h1 { font-size: 36px; }
+      .g2, .g3, .g4 { grid-template-columns: 1fr 1fr; }
+      .cover { min-height: auto; }
+    }
+    @media print {
+      body { background: white; }
+      .page { padding: 0; max-width: none; }
+      .cover { min-height: 100vh; page-break-after: always; }
+      h2 { break-before: page; }
+      h2:first-of-type { break-before: avoid; }
+      .card, tr { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <article class="page">
+    <header class="cover">
+      <p class="kicker">Confidential working paper · September 2026</p>
+      <h1>Australia launch plan.</h1>
+      <p class="lede">How actr.one becomes the career desk Australian actors actually keep open — starting in Perth, then the rest of the country — without pretending to be a casting marketplace.</p>
+      <div class="rule"></div>
+      <p class="meta">Prepared for an Australian-first commercial launch of actr.one (Call Sheet / Studio / Pro). Figures in AUD, GST-inclusive unless noted. Sources cited in §12.</p>
+    </header>
+
+    <h2>1. Executive summary</h2>
+    <p>Australia is in a production boom and an actor-admin mess. Drama spend hit a record <strong>$2.7 billion</strong> in FY2024/25 (Screen Australia). Perth Film Studios is open, with the first lot production already shooting. Actors still run their careers across Casting Networks, StarNow, email, Notes, a spreadsheet, and a coach they cannot afford every week.</p>
+    <p>actr.one is not another submissions portal. It is the <em>operating system between submissions</em>: sides, tapes, callbacks, notes, training, and a board-aware coach. Call Sheet is free. Studio and Pro are the paid desks.</p>
+    <div class="grid g4">
+      <div class="card"><div class="num">18 mo<div class="small">to national proof</div></div></div>
+      <div class="card"><div class="num">1,200<div class="small">Y1 registered desks</div></div></div>
+      <div class="card"><div class="num">180<div class="small">Y1 paying (15%)</div></div></div>
+      <div class="card"><div class="num">$42k<div class="small">Y1 revenue, bootstrap</div></div></div>
+    </div>
+    <p>The launch is <strong>Perth-first</strong> because the founder is here, WAAPA and the Perth Actors Centre are concentrated, and the new Malaga lot is putting WA actors into more rooms this year. Sydney and Melbourne are year-two density plays, not year-one vanity markets.</p>
+    <ul>
+      <li><strong>Do not compete with Casting Networks or Showcast.</strong> Sit beside them. Import nothing until we have permission and a reason.</li>
+      <li><strong>Price in Australian dollars, GST-inclusive, cancel anytime.</strong> Studio A$19/mo or A$190/yr. Pro A$39/mo or A$390/yr.</li>
+      <li><strong>Sell the work, not the dream.</strong> Copy stays actor-native. No “10x your bookings”.</li>
+      <li><strong>Bootstrap to $75k GST threshold, then decide on a raise.</strong> This is a craft tool with a small, high-trust market — not a venture-scale marketplace.</li>
+    </ul>
+
+    <h2>2. The product we are launching</h2>
+    <p>A signed-in career OS for actors at every stage. Persistence is per-account. Freemium entitlements are real, not a demo with the lights off.</p>
+    <table>
+      <thead><tr><th>Plan</th><th>Who</th><th class="r">AUD</th><th>What they get</th></tr></thead>
+      <tbody>
+        <tr><td>Call Sheet</td><td>Student, extra, first tapes</td><td class="r">Free</td><td>8 live roles, 6 notes, 3 tape lists, 3 coach asks/mo, The run</td></tr>
+        <tr><td>Studio</td><td>Working week, holds, callbacks</td><td class="r">19 / mo · 190 / yr</td><td>Unlimited board, 5 looks, analytics, arrange, 20 coach asks</td></tr>
+        <tr><td>Pro</td><td>Busy desk, series, voice + screen</td><td class="r">39 / mo · 390 / yr</td><td>Everything in Studio, 80 deeper coach asks</td></tr>
+      </tbody>
+    </table>
+    <p class="note">Yearly is two months free. Prices include GST. Current in-product USD labels ($14 / $28) should be replaced with these AUD figures at AU go-live. Beta remains uncharged until Stripe AU is live.</p>
+    <h3>What we are not</h3>
+    <ul>
+      <li>Not a casting directory, availability calendar for CDs, or submission button.</li>
+      <li>Not an agent CRM. Agents get a later “export the book” PDF, not another login.</li>
+      <li>Not a social network. No follower counts. The run is craft, not clout.</li>
+    </ul>
+
+    <h2>3. The Australian market</h2>
+    <h3>Demand-side facts</h3>
+    <ul>
+      <li><strong>$2.7bn</strong> drama expenditure in Australia, FY2024/25, 174 titles — up 43% year on year (Screen Australia Drama Report).</li>
+      <li><strong>$1.1bn</strong> of that on 71 Australian titles; international features and SVOD drove the rest, including a record ~$1.0bn on 20 international feature shoots.</li>
+      <li>Jobs and Skills Australia (ANZSCO 2111, 2025): <strong>8,400 employed</strong> as actors, dancers and other entertainers. 59% part-time. Median age 33. Median full-time weekly earnings $1,692 — which hides the much larger unpaid / mixed-income population.</li>
+      <li>State mix of that employed group: NSW 31%, VIC 30%, QLD 19%, <strong>WA 10%</strong>, SA 6%, others ~4%.</li>
+      <li>MEAA Equity, 30 Jun 2025: <strong>5,488 financial members</strong> (5,176 full + 312 students). This is the professional core, not the ceiling.</li>
+    </ul>
+    <h3>Addressable market (working estimates)</h3>
+    <table>
+      <thead><tr><th>Layer</th><th>Definition</th><th class="r">People</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>TAM</td><td>Anyone in AU who regularly auditions or trains as an actor (screen, stage, voice, extra → principal)</td><td class="r">40–60k</td><td>Students, community, extras, voice, plus employed 2111</td></tr>
+        <tr><td>SAM</td><td>Self-tape / live-audition working set who would keep a desk open weekly</td><td class="r">18–25k</td><td>Showcast / Casting Networks active users, drama-school pipeline</td></tr>
+        <tr><td>SOM Y1</td><td>Registered desks we can actually reach from Perth + schools + one east-coast wedge</td><td class="r">1.2k</td><td>~5% of SAM is year-three, not year-one</td></tr>
+      </tbody>
+    </table>
+    <p>Willingness to pay is the constraint, not awareness. Actors already pay for classes, self-tape rooms, Showcast/CN, reels, and MEAA. A$19/mo has to replace a messy stack, not sit on top of it. Call Sheet exists so the desk earns the daily slot <em>before</em> we charge.</p>
+
+    <h3>Why Australia, why now</h3>
+    <div class="grid g2">
+      <div class="card">
+        <h3>Production is up, titles are lumpy</h3>
+        <p>Fewer Australian titles (89 → 71) but more spend per title and a flood of incoming shoots. Actors feast/famine harder. A desk that survives the quiet week is the product.</p>
+      </div>
+      <div class="card">
+        <h3>Perth is no longer a flyover</h3>
+        <p>Perth Film Studios (Malaga) is operating. <em>Two Birds</em> (Stan/ITV) is the first lot shoot — ~$17m into WA, 100+ local cast and crew. Screenwest incentives are pulling work west. Local actors need the same OS as the east, without waiting for Sydney tools to care.</p>
+      </div>
+    </div>
+
+    <h2>4. Competitive position</h2>
+    <table>
+      <thead><tr><th>Player</th><th>Job they do</th><th>Why we do not fight them</th></tr></thead>
+      <tbody>
+        <tr><td>Casting Networks</td><td>Submit, be found, CD workflow</td><td>They own the job. We own the work after the sides land.</td></tr>
+        <tr><td>StarNow</td><td>Emerging / low-budget notices</td><td>Top-of-funnel. We convert chaos into a board.</td></tr>
+        <tr><td>Showcast (legacy)</td><td>AU directory habit</td><td>Directory ≠ desk. Do not rebuild a directory.</td></tr>
+        <tr><td>Notion / Sheets / Notes</td><td>Personal pipeline</td><td>This is the real competitor. We win on actor-native language, The run, and a coach that has read the board.</td></tr>
+        <tr><td>Acting coaches / PAC / Screenwise</td><td>Craft, in the room</td><td>Partners. Coach-in-a-box is a supplement for the 20-minute plan, not a replacement for a teacher.</td></tr>
+        <tr><td>Backstage / Spotlight (UK)</td><td>Jobs + profiles, other territories</td><td>Later: NZ then UK Spotlight-adjacent. Not Y1.</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Positioning line:</strong> <em>The desk you open after Casting Networks. Run the work. Book the room.</em></p>
+
+    <h2>5. Beachhead strategy</h2>
+    <p>Do not spray Sydney Facebook groups in month one. Density beats reach. A hundred Perth actors who actually log tapes will sell Melbourne faster than a thousand unused accounts.</p>
+    <h3>Phase A — Perth / Boorloo (months 0–6)</h3>
+    <ul>
+      <li><strong>WAAPA.</strong> Acting (~18) and music theatre (~20) graduating classes plus Open / short-course students. Offer a graduate pack: Call Sheet + one Studio month at graduation showcase.</li>
+      <li><strong>Perth Actors Centre and PACAS.</strong> Teacher-led: a 10-minute “put tonight’s scene on the board” at the end of class. Teachers get a free Pro seat if they put a cohort on Call Sheet.</li>
+      <li><strong>Self-tape rooms and readers.</strong> A printed call-sheet pad and a QR on the light stand: “Log the take before you pack the C-stand.”</li>
+      <li><strong>Screenwest / lot adjacency.</strong> Not a funding application on day one. Show up at open days, attachments, and WA-cast productions with a tool that helps local principals keep three holds honest.</li>
+      <li><strong>Founder-led.</strong> One night a week in a class or a green room. No ads.</li>
+    </ul>
+    <h3>Phase B — Second cities (months 4–10)</h3>
+    <p>Brisbane and Adelaide before Sydney. Same shape as Perth: one school, one independent studio, one self-tape room. QUT, USQ, Flinders, Adelaide College of the Arts. Casting is thinner; the spreadsheet pain is worse.</p>
+    <h3>Phase C — Density markets (months 8–18)</h3>
+    <p>Melbourne (theatre + TVC + comedy) and Sydney (screen + NIDA / ACA / Screenwise / The Studio by Casting Networks). Enter with proof: “WAAPA year used this for showcase season” — not with a brand campaign.</p>
+    <div class="grid g3">
+      <div class="card"><div class="num">60%<div class="small">Y1 users from WA + remote WAAPA alumni</div></div></div>
+      <div class="card"><div class="num">25%<div class="small">QLD / SA / TAS / ACT</div></div></div>
+      <div class="card"><div class="num">15%<div class="small">NSW / VIC until month 8</div></div></div>
+    </div>
+
+    <h2>6. Go-to-market</h2>
+    <h3>Principles</h3>
+    <ol>
+      <li>Actors trust actors. Every channel is a person with a board, not a media buy.</li>
+      <li>Teachers and readers are the distribution. Pay them in product and respect, not affiliate spam.</li>
+      <li>MEAA is a community to serve, not a list to harvest. Equity Foundation PD, not cold DMs to the membership roll.</li>
+      <li>First Nations, regional, and disability-led performers are in the beachhead on purpose — WA work is often regional; the desk has to travel.</li>
+    </ol>
+    <h3>90-day grassroots (Perth)</h3>
+    <table>
+      <thead><tr><th>Week</th><th>Move</th><th>Output</th></tr></thead>
+      <tbody>
+        <tr><td>1–2</td><td>Stripe AU + AUD prices + Privacy Policy (APP) + GST invoice</td><td>Can take money legally</td></tr>
+        <tr><td>2–3</td><td>10 Perth working actors on Pro comp for 90 days, weekly interview</td><td>Language, bugs, testimonials we are allowed to use</td></tr>
+        <tr><td>3–5</td><td>WAAPA student session + PAC teacher kit</td><td>80–150 Call Sheets</td></tr>
+        <tr><td>5–7</td><td>Self-tape studio QR + one reader partnership</td><td>Habit at the point of taping</td></tr>
+        <tr><td>7–10</td><td>Public launch: one piece in <em>The West</em> / ArtsHub, one Instagram carousel that does not look like SaaS</td><td>Name in the local industry</td></tr>
+        <tr><td>10–13</td><td>First paid conversion push: “your board is full” in-product, not ads</td><td>Studio upgrades from real limits</td></tr>
+      </tbody>
+    </table>
+    <h3>Always-on channels (cheap, on-voice)</h3>
+    <ul>
+      <li><strong>X / Instagram.</strong> Sides energy, not growth-hack carousels. One craft post, one product post, per week. Link in bio to Call Sheet.</li>
+      <li><strong>Email.</strong> Transactional + a monthly “call sheet” from us: three industry notes, one product note. Unsubscribe honoured like a human.</li>
+      <li><strong>Schools.</strong> End-of-year showcase packs. A printed card in the program: “Keep the roles in one place.”</li>
+      <li><strong>Referral.</strong> Later: “Bring your scene partner” — one extra Studio month each. Not in month one.</li>
+    </ul>
+    <h3>What we will not do</h3>
+    <ul>
+      <li>Buy Casting Networks keywords to impersonate a job board.</li>
+      <li>Spam MEAA Facebook groups.</li>
+      <li>Pay for fake testimonials.</li>
+      <li>Discount Pro to $1 to game conversion. Limits and price are the product honesty.</li>
+    </ul>
+
+    <h2>7. Pricing, packaging, and GST</h2>
+    <p>Launch currency is <strong>Australian dollars, GST-inclusive</strong>. Display “A$19/mo inc. GST”. Yearly billed once, refund pro-rata for 14 days under ACL if they have barely used it; after that, unused time as credit. Cancel anytime, keep the board, fall back to Call Sheet caps.</p>
+    <table>
+      <thead><tr><th>Plan</th><th class="r">Inc GST / mo</th><th class="r">Ex GST / mo</th><th class="r">Inc GST / yr</th><th>Role</th></tr></thead>
+      <tbody>
+        <tr><td>Call Sheet</td><td class="r">0</td><td class="r">0</td><td class="r">0</td><td>Habit, education, extras</td></tr>
+        <tr><td>Studio</td><td class="r">19.00</td><td class="r">17.27</td><td class="r">190.00</td><td>Default paid</td></tr>
+        <tr><td>Pro</td><td class="r">39.00</td><td class="r">35.45</td><td class="r">390.00</td><td>Coach-heavy desks</td></tr>
+      </tbody>
+    </table>
+    <p>School / company: a later “Rep class” SKU — 12 Call Sheets + 1 teacher Pro for A$49/mo — only after two teachers ask. Do not invent B2B before the B2C desk is loved.</p>
+    <p>GST: register when turnover is heading through $75k (or immediately if we want to claim credits on tools). Until then, still show honest prices; do not surprise actors with a 10% jump.</p>
+
+    <h2>8. Unit economics</h2>
+    <p>COGS is the coach. Board data is cheap. Auth and Postgres are cheap at this scale.</p>
+    <table>
+      <thead><tr><th>Plan</th><th>Asks / mo included</th><th>Assumed use</th><th>Est. model cost / ask</th><th class="r">COGS / user / mo</th><th class="r">Gross margin</th></tr></thead>
+      <tbody>
+        <tr><td>Call Sheet</td><td>3</td><td>40%</td><td>$0.25</td><td class="r">$0.30</td><td class="r">n/a (free)</td></tr>
+        <tr><td>Studio</td><td>20</td><td>45%</td><td>$0.28</td><td class="r">$2.52</td><td class="r">~87% on $17.27 ex</td></tr>
+        <tr><td>Pro</td><td>80</td><td>35%</td><td>$0.55</td><td class="r">$15.40</td><td class="r">~57% on $35.45 ex</td></tr>
+      </tbody>
+    </table>
+    <p class="note">Model cost is a planning assumption, not a vendor quote. Cap free asks hard (already in product). Fail closed. If Pro COGS drifts above $18, tighten token length before we discount the plan.</p>
+    <ul>
+      <li>Target blended paid ARPU: <strong>A$22–26 / month</strong> (mix of Studio yearly + some Pro).</li>
+      <li>Target payback on a teacher-led cohort: under 60 days of founder time, not ad spend.</li>
+      <li>Support: email + in-app, 24h on weekdays AWST. No phone line in Y1.</li>
+    </ul>
+
+    <h2>9. 18-month targets</h2>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th class="r">Month 6</th>
+          <th class="r">Month 12 (Y1)</th>
+          <th class="r">Month 18</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Registered desks</td><td class="r">400</td><td class="r">1,200</td><td class="r">3,500</td></tr>
+        <tr><td>WAU / registered</td><td class="r">35%</td><td class="r">30%</td><td class="r">28%</td></tr>
+        <tr><td>Paying</td><td class="r">50</td><td class="r">180</td><td class="r">520</td></tr>
+        <tr><td>Paid mix Studio / Pro</td><td class="r">85 / 15</td><td class="r">80 / 20</td><td class="r">75 / 25</td></tr>
+        <tr><td>Revenue run-rate (inc GST)</td><td class="r">~$12k/yr</td><td class="r">~$42k/yr</td><td class="r">~$130k/yr</td></tr>
+        <tr><td>NPS / “would recommend a scene partner”</td><td class="r">40+</td><td class="r">45+</td><td class="r">50+</td></tr>
+      </tbody>
+    </table>
+    <p>Y1 revenue does not salary a team. It proves conversion, COGS, and that Perth density works. The 18-month number is “a living product with one full-time owner and contractors,” not a Series A story.</p>
+    <h3>Simple Y1 P&L (bootstrap)</h3>
+    <table>
+      <thead><tr><th>Item</th><th class="r">AUD</th></tr></thead>
+      <tbody>
+        <tr><td>Studio + Pro revenue (inc GST)</td><td class="r">42,000</td></tr>
+        <tr><td>GST collected (if registered)</td><td class="r">(3,800)</td></tr>
+        <tr><td>Coach / model COGS</td><td class="r">(7,500)</td></tr>
+        <tr><td>Hosting, auth, domain, email, Stripe fees (~3%)</td><td class="r">(4,200)</td></tr>
+        <tr><td>Insurance (public + cyber), accounting, ASIC</td><td class="r">(3,500)</td></tr>
+        <tr><td>Grassroots (print, class coffees, travel to one showcase)</td><td class="r">(4,000)</td></tr>
+        <tr><td>Contractor design / legal (privacy, terms)</td><td class="r">(6,000)</td></tr>
+        <tr><td><strong>Contribution before founder labour</strong></td><td class="r"><strong>~13,000</strong></td></tr>
+      </tbody>
+    </table>
+    <p>Founder labour is the real cost. Treat Y1 as an 0.6 FTE build + 0.4 FTE in rooms. Do not hire marketing.</p>
+
+    <h2>10. Company, legal, data</h2>
+    <ul>
+      <li><strong>Entity.</strong> WA-registered Pty Ltd. Founder in Perth. ASIC, registered office, $1–$10 shares until a raise exists.</li>
+      <li><strong>Trading name.</strong> actr.one. Domain already is the brand. ABN on invoices.</li>
+      <li><strong>Payments.</strong> Stripe Australia, AUD. Apple/Google in-app not required (web app). Keep plans cancelable in Settings.</li>
+      <li><strong>Consumer law.</strong> Subscriptions: clear price, GST, renew date, one-click cancel. No dark patterns. ACL 14-day cooling-off for unsolicited sales; we are not door-to-door, but we still honour a short refund window.</li>
+      <li><strong>Privacy.</strong> APPs. Board data is personal (name, roles, notes). Publish a short Privacy Policy: what we store, that craft events live with the board, that coach prompts send board context to a model, that we do not sell data. Host region: prefer AU or be honest if not. Do not train public models on notes.</li>
+      <li><strong>AI disclosure.</strong> The coach is a model. Say so. Not a CD, not a psychologist, not MEAA advice.</li>
+      <li><strong>Not a casting service.</strong> Terms: we do not offer work, take commission, or contact CDs on your behalf. That keeps us out of the Casting Networks / agent fight.</li>
+      <li><strong>IP.</strong> Brand lockup, product, copy. Actors keep their notes and sides. We do not claim their material.</li>
+      <li><strong>Insurance.</strong> Cyber + professional indemnity once we take paid Pro (coach advice-adjacent). Public liability if we run in-person classes.</li>
+    </ul>
+
+    <h2>11. Product work that the launch needs</h2>
+    <p>The desk is already a beta OS. Australia go-live is not a rewrite. It is a short commercial and localisation pass.</p>
+    <ol>
+      <li>AUD prices, GST label, Stripe, invoices.</li>
+      <li>Privacy Policy, Terms, AI disclosure, refund copy.</li>
+      <li>Timezone and date: Australia/Perth default for WA accounts; let them set Sydney/Melbourne. Call times as local.</li>
+      <li>Copy pass: “self-tape”, “CD”, “MEAA”, “hold”, “avail” — already close. Add AU examples in empty states, not US network slang.</li>
+      <li>Export: one PDF “book” page (roles + status). Agents asked for this in every adjacent tool.</li>
+      <li>School code: a teacher can mint 30 Call Sheet seats for a term.</li>
+      <li>Uptime and backup for account/plan DB. Board is on-device today — document that clearly so a lost phone is a known risk, or add optional encrypted export before we take money.</li>
+    </ol>
+    <p><strong>Blocker:</strong> do not run paid ads or charge Perth actors while board data is device-local without an export. A lost phone during showcase week would end the brand. Ship export (and ideally cloud backup for paid) before Stripe goes live.</p>
+
+    <h2>12. Risks</h2>
+    <table>
+      <thead><tr><th>Risk</th><th>Why it is real</th><th>What we do</th></tr></thead>
+      <tbody>
+        <tr><td>Actors will not pay</td><td>Income is lumpy; 59% part-time</td><td>Call Sheet stays genuinely useful. Charge only when the live-role cap hurts.</td></tr>
+        <tr><td>CN builds a “tracker” tab</td><td>They already own daily traffic</td><td>Stay deeper on craft + coach. Do not become a thin tracker.</td></tr>
+        <tr><td>Coach COGS spikes</td><td>Pro 80 asks × long context</td><td>Atomic quotas already. Trim context, not price, first.</td></tr>
+        <tr><td>Data loss on device</td><td>Current architecture</td><td>Export + paid backup before charging.</td></tr>
+        <tr><td>East-coast indifference</td><td>Perth is far</td><td>Win WAAPA/PAC proof, then teachers move with alumni.</td></tr>
+        <tr><td>Brand looks like a game</td><td>Ranks, marks, sides</td><td>Keep copy craft-native. Never leaderboards.</td></tr>
+        <tr><td>Union / agent politics</td><td>Tools that “disintermediate”</td><td>We do not submit, quote rates, or message CDs.</td></tr>
+      </tbody>
+    </table>
+
+    <h2>13. Team and capital</h2>
+    <p><strong>Y1 shape:</strong> one founder-operator (product + Perth rooms) + a fractional accountant + a privacy/terms lawyer (fixed job) + design only if the brand lockup needs print.</p>
+    <p><strong>Capital:</strong> bootstrap. A $40–80k friends-and-family round only if we need cloud backup + 6 months of founder wage. Not before 50 paying desks. No agency retainers.</p>
+    <p><strong>If it works by month 18:</strong> one community hire in Melbourne or Sydney (actor who already uses the desk), still no ads team.</p>
+
+    <h2>14. Decision checklist</h2>
+    <ul>
+      <li>☐ Pty Ltd + ABN + Stripe AU</li>
+      <li>☐ Privacy, Terms, AI disclosure</li>
+      <li>☐ Board export (and paid backup)</li>
+      <li>☐ AUD / GST prices in the product</li>
+      <li>☐ 10 Perth design partners on Pro comp</li>
+      <li>☐ One school + one studio + one tape-room QR</li>
+      <li>☐ Charge the first non-comp Studio from a real limit, not a discount code</li>
+    </ul>
+    <p>When those seven are ticked, actr.one is an Australian company selling to Australian actors. Until then it is a strong beta. Do not confuse the two.</p>
+
+    <h2>15. Sources</h2>
+    <ul>
+      <li>Screen Australia, Drama Report 2024/25 — $2.7bn expenditure, 174 titles, 71 Australian titles at $1.1bn.</li>
+      <li>Olsberg•SPI / Ausfilm PICA update, April 2026 — capacity and inward investment context.</li>
+      <li>Jobs and Skills Australia, ANZSCO 2111 (2025 LFS): 8,400 employed; state shares; 59% part-time; median FT $1,692/week.</li>
+      <li>MEAA Annual Report 2024/25 — Equity financial members 5,488 at 30 Jun 2025.</li>
+      <li>Ausfilm / Screenwest — Perth Film Studios operating; <em>Two Birds</em> first lot production; WA Production Attraction Incentive.</li>
+      <li>WAAPA public figures — acting ~18 places, music theatre ~20, heavy oversubscription.</li>
+      <li>Internal: actr.one plans (Call Sheet / Studio $14 / Pro $28 USD in product today) — to be relabelled AUD at go-live as above.</li>
+    </ul>
+    <p class="note">Market sizes for TAM/SAM/SOM are planning estimates, not census counts. Employed 2111 undercounts working actors (mixed income, extras, students). Do not quote SOM as a fact in press.</p>
+
+    <div class="rule"></div>
+    <p class="kicker">actr.one · Australia launch · September 2026</p>
+    <p class="lede">Run the work. Book the room. Start in Perth. Charge only when the desk is already open.</p>
+  </article>
+</body>
+</html>
